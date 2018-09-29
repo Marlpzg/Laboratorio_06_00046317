@@ -131,7 +131,7 @@ function verUsuarios(){
 function iniciarPrograma(){
     while(true){
         let val = mostrarMenu();
-        if(val != 6){
+        if(val != 6 && val != null){
             switch(val){
                 case "1":
                     agregarUsuario();
