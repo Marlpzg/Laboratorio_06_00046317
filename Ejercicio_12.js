@@ -1,3 +1,5 @@
+var usuarios = [];
+
 function mostrarMenu(){
     return opcion = prompt("¿Qué desea hacer?\n 1-Ingresar una persona.\n 2-Buscar una persona. \n 3-Modificar una persona.\n 4-Eliminar una persona.\n 5-Mostrar todas las personas.\n 6- Salir.");
 }
@@ -127,7 +129,6 @@ function verUsuarios(){
 }
 
 function iniciarPrograma(){
-    var usuarios = [];
     while(true){
         let val = mostrarMenu();
         if(val != 6){
