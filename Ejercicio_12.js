@@ -20,7 +20,7 @@ function agregarUsuario(){
         if(correo != null){
             break;
         }else{
-            alert("Ese correo ya ha sido registrado.")
+            alert("Ese correo ya ha sido registrado.");
         }
     }
     
