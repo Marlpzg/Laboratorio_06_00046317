@@ -4,7 +4,7 @@ function mostrarMenu(){
 
 function agregarUsuario(){
     let nom, ape, fecha, tel, correo;
-    alert("Bienvenido al formulario de registro de usuario, por favor llene los datos que se le soliciten.")
+    alert("Bienvenido al formulario de registro de usuario, por favor llene los datos que se le soliciten.");
     nom = prompt("Ingrese el nombre.");
     ape = prompt("Ingrese el apellido.");
     fecha = prompt("Ingrese la fecha de nacimiento.");
@@ -38,7 +38,7 @@ function agregarUsuario(){
 
 function modificarUsuario(){
     let codigo, usuario;
-    alert("Bienvenido al formulario de edición de usuario, por favor llene los datos que se le soliciten.")
+    alert("Bienvenido al formulario de edición de usuario, por favor llene los datos que se le soliciten.");
     codigo = prompt("Ingrese el código del usuario que modificará.");
     if(codigo >= 0 && codigo < usuarios.length){
         usuario = usuarios[codigo];
@@ -58,7 +58,7 @@ function modificarUsuario(){
                 if(correo != null){
                     break;
                 }else{
-                    alert("Ese correo ya ha sido registrado.")
+                    alert("Ese correo ya ha sido registrado.");
                 }
             }else{
                 break;
@@ -75,12 +75,12 @@ function modificarUsuario(){
 
 function eliminarUsuario(){
     let codigo, usuario, conf;
-    alert("Bienvenido al formulario de borrado de usuario, por favor llene los datos que se le soliciten.")
+    alert("Bienvenido al formulario de borrado de usuario, por favor llene los datos que se le soliciten.");
     codigo = prompt("Ingrese el código del usuario que eliminará.");
     if(codigo >= 0 && codigo < usuarios.length){
         usuario = usuarios[codigo];
         
-        alert("A continuación se le mostrará el usuario que ha seleccionado.")
+        alert("A continuación se le mostrará el usuario que ha seleccionado.");
 
         alert(buscarUsuario(usuario.Correo));
 
@@ -114,7 +114,7 @@ function buscarUsuario(correo){
 }
 
 function verUsuarios(){
-    alert("A continuación se le mostrarán todas las fichas de las personas registradas.")
+    alert("A continuación se le mostrarán todas las fichas de las personas registradas.");
     for(let x of usuarios){
         let msg = "";
         msg = msg + "Código: " + usuarios.indexOf(x) + "\n";
@@ -136,7 +136,7 @@ function iniciarPrograma(){
                     agregarUsuario();
                     break;
                 case "2":
-                    alert("Por favor llene los datos que se le soliciten para buscar su resultado.")
+                    alert("Por favor llene los datos que se le soliciten para buscar su resultado.");
                     let correoB = prompt("Ingrese el correo del usuario.").toLowerCase();
                     alert(buscarUsuario(correoB));
                     break;
@@ -150,7 +150,7 @@ function iniciarPrograma(){
                     verUsuarios();
                     break;
                 default:
-                    alert("Por favor ingrese un dato válido.")
+                    alert("Por favor ingrese un dato válido.");
             }
         }else{
             alert("¡Hasta pronto!");
